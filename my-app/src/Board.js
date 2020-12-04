@@ -24,12 +24,6 @@ function renderPiece(x, y, [knightX, knightY]) {
   }
 };
 
-function handleSquareClick(toX, toY) {
-  if (canMoveKnight(toX, toY)) {
-    moveKnight(toX, toY);
-  }
-};
-
 export default function Board({knightPosition}) {
   const squares = [];
   for (let i = 0; i < 64; i++) {
