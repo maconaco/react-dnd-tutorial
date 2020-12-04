@@ -2,7 +2,6 @@ import React from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import Knight from './Knight';
-import { canMoveKnight, moveKnight } from './Game';
 import BoardSquare from './BoardSquare';
 
 function renderSquare(i, knightPosition) {
