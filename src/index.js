@@ -4,14 +4,10 @@ import './index.css';
 import Board from './Board';
 import reportWebVitals from './reportWebVitals';
 import { observe } from './Game';
+import Table from './Table';
 
 const root = document.getElementById('root');
 
-observe((knightPosition) =>
-  ReactDOM.render(
-    <Board knightPosition={knightPosition}/>, root
-  )
-);
-
-
-reportWebVitals();
+ReactDOM.render(
+  <Table/>, root
+)
